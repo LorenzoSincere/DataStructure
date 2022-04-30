@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Ubuntu 20.04 LTS (d592df43-5e2c-4d32-b3e2-fa7f18cc1607)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/DataStructure" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
