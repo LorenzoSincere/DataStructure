@@ -50,13 +50,31 @@ LinkList List_TailInsert(LinkList L) {
     return L;
 }
 
-// /**
-// * ***基本操作--插入(i 为位序)
-// * the worst is O(n)，the best is O(1)
-// **/
-// int List***(*** L, int i, int e) {
-//     return 1;
-// }
+/**
+* 单链表基本操作--查找(i为序号）
+* the worst is O(n)，the best is O(1)
+**/
+int GetElem(LinkList L, int i) {
+    int e = 0;
+    int j = 1;
+    LNode *p;
+    if(i == 0) {
+        return L;
+    }
+    if(i < 0) {
+        return NULL;
+    }
+
+return e;
+}
+
+ /**
+ * ***基本操作--插入(i 为位序)
+ * the worst is O(n)，the best is O(1)
+ **/
+ int ListInsert(*** L, int i, int e) {
+     return 1;
+ }
 
 // /**
 // * ***基本操作--删除(i 为位序)
@@ -67,15 +85,6 @@ LinkList List_TailInsert(LinkList L) {
 //   return e;
 // }
 
-/**
-* ***基本操作--按序号查找结点(i 为序号)
-* O(n)
-**/
-int GetElem(LinkList L,int i) {
-    int j = 1;
-
-    return 1;
-}
 
 /**
 * ***基本操作--按值查找(i 为位序)
@@ -96,8 +105,14 @@ int ***Empty(*** L) {
 /**
 * ***基本操作--返回***长度
 **/
-int ListLength(SqlList L) {
-    return L.length;
+int ListLength(LinkList L) {
+    int length = 0;
+    LNode *p = L->next;
+    while(p) {
+        p = p->next;
+        length++;
+    }
+    return length;
 }
 
 /**
