@@ -14,8 +14,8 @@ typedef struct BiTNode
 BiTree Create() {
     char ch;
     scanf("%c",&ch);
-    if(ch=='#') return NULL;
-    BiTree T=(BiTree)malloc(sizeof(struct BiTNode));
+    if(ch == '#') return NULL;
+    BiTree T = (BiTree)malloc(sizeof(struct BiTNode));
     T->data = ch;
     T->lchild = Create();
     T->rchild = Create();
@@ -36,21 +36,21 @@ int main()
 }
 
 void Preorder(BiTree T){
-    if(T==NULL)
+    if(T == NULL)
         return;
     printf(" %c",T->data);
     Preorder(T->lchild);
     Preorder(T->rchild);
 }
 void Inorder(BiTree T){
-    if(T==NULL)
+    if(T == NULL)
         return;
     Inorder(T->lchild);
     printf(" %c",T->data);
     Inorder(T->rchild);
 }
 void Postorder(BiTree T){
-    if(T==NULL)
+    if(T == NULL)
         return;
     Postorder(T->lchild);
     Postorder(T->rchild);
